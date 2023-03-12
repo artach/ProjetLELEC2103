@@ -2,7 +2,7 @@
 git init
 	- need to be done in the parent folder
 
-git remote add origin https://github.com/cvanhoenacke/LELEC2103
+git remote add origin https://github.com/artach/ProjetLELEC2103.git
 	- to make the link between your repository local and the repository online
 
 git branch -M main
