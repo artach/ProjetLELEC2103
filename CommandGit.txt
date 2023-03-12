@@ -1,0 +1,37 @@
+**********************  The initialization ****************************************
+git init
+	- need to be done in the parent folder
+
+git remote add origin https://github.com/cvanhoenacke/LELEC2103
+	- to make the link between your repository local and the repository online
+
+git branch -M main
+
+git config --global user.name yourPseudo
+	- to set the name of the commit
+
+git config --global user.email yourEmail@mail.com
+	- to set the email of the commit
+
+
+*********************  The usefull command  ***************************************
+git status
+	- to see the status of the files not added, not commit and not push
+
+git add yourFileOrFolder
+	- to add the file or folder from the working directory to the stage changing
+
+git discard yourFileOrFolder
+	- to undo a file or folder added
+
+git commit yourFileOrFolder- -m "your message for the commit"
+	- to add the file or folder from the stage changing to the repository local
+
+git push --set-upstream origin main
+	- to add the file or folder from the repository local to the repository online
+
+git fetch
+	- to update the .git to see if there are some differencies between the repo. local and the repo. online
+
+git pull
+	- to modify the differencies between the repositories on the repository local
