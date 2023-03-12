@@ -27,8 +27,10 @@ git discard yourFileOrFolder
 git commit yourFileOrFolder- -m "your message for the commit"
 	- to add the file or folder from the stage changing to the repository local
 
-git push --set-upstream origin main
+git push origin main
 	- to add the file or folder from the repository local to the repository online
+	- if an error : "! [rejected] main -> main (non-fast-forward) ..."
+	  you need to make : git pull --rebase origin main
 
 git fetch
 	- to update the .git to see if there are some differencies between the repo. local and the repo. online
