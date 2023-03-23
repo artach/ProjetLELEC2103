@@ -1,39 +1,46 @@
 **********************  The initialization ****************************************
 git init
 	- need to be done in the parent folder
+	- it's create a repository local for your parent folder
 
 git remote add origin https://github.com/artach/ProjetLELEC2103.git
 	- to make the link between your repository local and the repository online
+	- the name origin is now your remote's name for the project
 
 git branch -M main
+	-the name main is now your branch's name fot the project
+	- you have to remake this command when you want to commit on an other branch
 
-git config --global user.name yourPseudo
+git config --global user.name <yourPseudo>
 	- to set the name of the commit
 
-git config --global user.email yourEmail@mail.com
+git config --global user.email <yourEmail@mail.com>
 	- to set the email of the commit
+	- if you need to login your username is your pseudo or email and the password is your generate token (see online)
 
 
 *********************  The usefull command  ***************************************
 git status
 	- to see the status of the files not added, not commit and not push
 
-git add yourFileOrFolder
+git add <yourFileOrFolder>
 	- to add the file or folder from the working directory to the stage changing
 
-git discard yourFileOrFolder
+git discard <yourFileOrFolder>
 	- to undo a file or folder added
 
-git commit yourFileOrFolder- -m "your message for the commit"
+git commit <yourFileOrFolder>- -m "your message for the commit"
 	- to add the file or folder from the stage changing to the repository local
 
-git push origin main
+git push <remote> <main>
 	- to add the file or folder from the repository local to the repository online
+	- If you follow the init, your remote is "origin" and your branch "main"
 	- if an error : "! [rejected] main -> main (non-fast-forward) ..."
 	  you need to make : git pull --rebase origin main
 
 git fetch
 	- to update the .git to see if there are some differencies between the repo. local and the repo. online
 
-git pull
+git pull <remote> <branch>
 	- to modify the differencies between the repositories on the repository local
+	- If you follow the init, your remote is "origin" and your branch "main"
